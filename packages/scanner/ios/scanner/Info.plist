@@ -53,5 +53,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSCameraUsageDescription</key>
+	<string>För att kunna läsa QR kod behöver vi använda kameran.</string>
 </dict>
 </plist>
