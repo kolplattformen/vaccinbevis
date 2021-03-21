@@ -5,7 +5,7 @@ import { Button, Divider, Layout, TopNavigation } from '@ui-kitten/components';
 export const HomeScreen = ({ navigation }) => {
 
   const navigateDetails = () => {
-    navigation.navigate('Details');
+    navigation.navigate('Details', { qr: '8UADZCKFEOEDJOD2KC54EM-DX.CH8FSKDQ$D.OE44E5$CS44+8DK44OEC3EFGVCD2' });
   };
 
   return (
