@@ -1,5 +1,5 @@
 {
-  "name": "generator",
+  "name": "hcert-site",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,11 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@netnexus/node-cborwebtoken": "^2.1.0",
-    "base45": "1.1",
-    "cbor": "^5.2.0",
-    "cose-js": "^0.4.2",
-    "pako": "^2.0.3",
-    "zlib": "^1.0.5"
+    "bwip-js": "^2.1.1",
+    "express": "^4.17.1"
   }
 }
