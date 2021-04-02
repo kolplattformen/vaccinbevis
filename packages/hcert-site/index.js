@@ -16,14 +16,14 @@ const headers = {
   u: { kid: '11' }
 }
 
-app.use('/demo', async (req, res) => {
-  const qr = await hcert.generate(payload, headers, signer)
+app.use('/', async ({ query }, res) => {
+  const qr = await hcert.generate(query.payload || payload, headers, signer)
   const png = await bwipjs.toBuffer({
     bcid: 'azteccode', // Barcode type
-    text: JSON.stringify(qr, null, 0), // Text to encode
+    text: qr, // Text to encode
     scale: 2
   })
   res.end(png)
 })
 
-app.listen(process.env.PORT || 3000, () => console.log(`listening on port ${process.env.PORT || 3000}`))
+app.listen(process.env.PORT || 3000, () => console.log(`listening on port http://localhost:${process.env.PORT || 3000}`))
