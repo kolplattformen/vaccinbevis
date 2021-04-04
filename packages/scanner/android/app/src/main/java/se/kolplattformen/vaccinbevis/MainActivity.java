@@ -1,4 +1,4 @@
-package com.scanner;
+package se.kolplattformen.vaccinbevis;
 
 import com.facebook.react.ReactActivity;
 
